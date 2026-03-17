@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Creative Scholarship / Seminar Form</title>
+
+<style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        margin: 0;
+        padding: 20px;
+        color: #333;
+    }
+
+    .container {
+        max-width: 700px;
+        margin: auto;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        padding: 25px;
+    }
+
+    h2 {
+        text-align: center;
+        color: #764ba2;
+    }
+
+    fieldset {
+        border: none;
+        margin-bottom: 20px;
+        padding: 15px;
+        border-radius: 10px;
+        background: #f9f9ff;
+    }
+
+    legend {
+        font-weight: bold;
+        color: #667eea;
+        padding: 5px 10px;
+    }
+
+    label {
+        display: block;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        transition: 0.3s;
+    }
+
+    input:focus, select:focus, textarea:focus {
+        border-color: #764ba2;
+        outline: none;
+        box-shadow: 0 0 5px rgba(118,75,162,0.5);
+    }
+
+    .options {
+        margin-top: 8px;
+    }
+
+    .options label {
+        display: inline-block;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        transform: scale(1.05);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    .emoji {
+        font-size: 18px;
+        margin-right: 5px;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="container">
+    <h2>🎓 Scholarship & Seminar Registration</h2>
+
+    <form>
+
+        <fieldset>
+            <legend>👤 Personal Info</legend>
+
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your name" required>
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Phone</label>
+            <input type="tel" placeholder="Enter your number" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>📚 Academic Details</legend>
+
+            <label>Qualification</label>
+            <select>
+                <option>Select</option>
+                <option>High School</option>
+                <option>Undergraduate</option>
+                <option>Postgraduate</option>
+                <option>PhD</option>
+            </select>
+
+            <label>Field of Study</label>
+            <input type="text" placeholder="e.g. Computer Science">
+        </fieldset>
+
+        <fieldset>
+            <legend>🎤 Seminar Preferences</legend>
+
+            <label>Mode</label>
+            <div class="options">
+                <label><input type="radio" name="mode"> 🌐 Online</label>
+                <label><input type="radio" name="mode"> 🏫 Offline</label>
+            </div>
+
+            <label>Topics You Love</label>
+            <div class="options">
+                <label><input type="checkbox"> 🤖 AI</label>
+                <label><input type="checkbox"> 💻 Web Dev</label>
+                <label><input type="checkbox"> 📊 Data Science</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>💰 Scholarship</legend>
+
+            <label>Apply for Scholarship?</label>
+            <div class="options">
+                <label><input type="radio" name="scholar"> Yes</label>
+                <label><input type="radio" name="scholar"> No</label>
+            </div>
+
+            <label>Why should we select you?</label>
+            <textarea rows="4" placeholder="Write something impressive..."></textarea>
+        </fieldset>
+
+        <button type="submit">🚀 Submit Application</button>
+
+    </form>
+</div>
+
+</body>
+</html>
